@@ -10,8 +10,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.chazo.bandanalysis.view.LoginActivity">
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/login_btn"
@@ -19,7 +18,7 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:layout_gravity="center"
-            android:onClick="@{() -> viewModel.onClickedLoginButton()}"/>
+            android:onClickListener="@{() -> viewModel.onClickedLoginButton()}"/>
     </FrameLayout>
 </layout>
 

@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.chazo.study"
+        applicationId "com.chazo.bandanalysis"
         minSdkVersion 23
         targetSdkVersion 26
         versionCode 1
@@ -20,7 +20,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    dataBinding.enabled true
+    dataBinding{
+        enabled = true
+    }
 }
 
 dependencies {

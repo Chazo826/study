@@ -5,7 +5,7 @@ import android.databinding.DataBindingUtil
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.chazo.bandanalysis.Navigator.CallActivityNavigator
+import com.chazo.bandanalysis.navigator.CallActivityNavigator
 import com.chazo.bandanalysis.R
 import com.chazo.bandanalysis.databinding.LoginBinding
 import com.chazo.bandanalysis.viewmodel.LoginViewModel

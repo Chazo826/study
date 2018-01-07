@@ -2,7 +2,7 @@ package com.chazo.bandanalysis.viewmodel
 
 import android.util.Log
 import com.chazo.bandanalysis.LogTag
-import com.chazo.bandanalysis.Navigator.CallActivityNavigator
+import com.chazo.bandanalysis.navigator.CallActivityNavigator
 import com.chazo.bandanalysis.http.Authorization
 
 /**
@@ -28,6 +28,5 @@ class LoginViewModel(private var navigator: CallActivityNavigator) : ViewModel {
 
     fun onClickedLoginButton(){
         navigator.callActivityWithUrl(authorization.getLoginUrl())
-        Log.d(LogTag.DEFAULT.tag, "onClick")
     }
 }
